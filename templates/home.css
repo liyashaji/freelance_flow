@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#banner{
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+}
