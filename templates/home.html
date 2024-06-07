@@ -9,18 +9,10 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-  <div class="container">
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand">Freelance Flow</a>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search for Jobs" aria-label="Search ">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
   
-    <img class="img-fluid" id="banner" src="static\banner.png" height="450px", width="100%">
+    {% include 'nav.html' %}
+
+    <img class="img-fluid" id="banner" src="static\banner.png" width="100%">
     <br>
     <br>
     <h2 class="text-center">About Us</h2>
@@ -30,6 +22,7 @@
       At Freelance Flow, we understand the challenges freelancers face in finding quality gigs and the right clients. That's why we've created a user-friendly platform that simplifies the search process, making it easy to discover and apply for jobs that match your skills and interests. Our comprehensive database is continuously updated with the latest job postings across various industries, ensuring you never miss out on new opportunities.</p>
     <br>
     <h2>Looking for...</h2>
+    <br>
     <div>
       {% for job in jobs %}
         {% include 'jobitem.html' %}
@@ -41,9 +34,7 @@
   <button class="btn btn-outline-primary btn-lg">Contact Us</button>
 </div>
 <center>
-  <footer class="mt-4">
-    Copyright 2024, Freelance Flow
-  </footer>
+  {% include 'footer.html' %}
 </center>
 
 
