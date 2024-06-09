@@ -3,13 +3,8 @@ from flask import render_template
 from flask import jsonify
 from database import engine
 from sqlalchemy import text
-from dotenv import load_dotenv
-import os
-
-load_dotenv() 
 app = Flask(__name__)
 
-app.config['DEBUG'] = True
 
 def load_jobs_from_db():
      try:
