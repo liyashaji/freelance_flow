@@ -1,11 +1,8 @@
 from sqlalchemy import create_engine, text
-import os
 
-# Load the password from the Repository Secret
-password = os.getenv("DB_CONNECTION_STRING")
 
 # Service URI provided by Aiven
-service_uri = f"mysql://avnadmin:{password}@mysql-19bbe057-freelanceflow.i.aivencloud.com:17897/defaultdb"
+service_uri = "mysql://avnadmin:AVNS_4NuPSCuz4nj7XXr36m4@mysql-19bbe057-freelanceflow.i.aivencloud.com:17897/defaultdb"
 
 # Custom SSL parameters
 ssl_args = {
